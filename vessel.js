@@ -7,25 +7,26 @@ function calculate() {
     let crainWeight = document.getElementById("crain").value; 
     let survNumber1 =  document.getElementById("survei1").value; 
     let survNumber2 =  document.getElementById("survei2").value; 
+
+
+    
     
     document.write("<br/>" + "<br/>" + "Введенный общий вес (брутто): " + resultWeight + "кг.");
     document.write("<br/>" + "<br/>" + "Общее кол-во связок: " + itemsSum + " шт.");
+    document.write("<br/>" + "<br/>" + "Средний вес одной связки: " + oneItemWeight + "кг.");
     document.write ("<br/" + "<br/>" + "Количество подъемов по " + liftSum + " шт: " + liftSumPreTotal + ".");
     document.write ("<br/" + "<br/>" + "Количество св/шт в последнем подъеме" + piecesInlustLift + ".");
     document.write ("<br/" + "<br/>" + "Общее количество подъемов: " + liftSumTotal);
-    document.write("<br/>" + "<br/>" + "Средний вес одной связки: " + oneItemWeight + "кг.");
+    
     
     //расчет кол-ва подьемов
 
-
     
-    liftSum <= crainWeight;
+    
     let liftSumPreTotal = Math.floor(itemsSum/liftSum);
     let piecesInlustLift = itemsSum - (liftSumPreTotal * liftSum );
     
     if (piecesInlustLift > 0) {
-      
-    
     } 
     else {
       false;
