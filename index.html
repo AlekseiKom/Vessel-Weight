@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Перевеска на судно</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap-Grid">
+<div class="header"><h1><i>Контрольная перевеска на судно.</i></h1>
+    <p class="text"><bold>(арматура, заготовка)</bold></p>
+</div>
+<div class="article"<p id="mainText">
+        <div class="container">
+                <form id="calculateForm" action=""  method="post">    <!-- <?= $_SERVER['PHP_SELF']?> -->
+                    <div class="field-block">
+                        <label for="weight">Общий вес: </label>
+                        <input id="weight" class="field" name="weightTotal" value="" required type="number" placeholder="Общий вес (брутто) с погр. (до 10 кг.)">
+                    </div>
+                    <div class="field-block">
+                        <label for="totalUnits">Всего связок: </label>
+                        <input id="totalUnits" class="field" name="totalUnits" value=""  required type="number" placeholder="Общее кол-во связок/штук.">
+                    </div>
+                    <div class="field-block">
+                        <label for="lift">Св./шт. в одном подъеме:</label>
+                        <input id="lift" class="field" name="lift" required type="number" value=""  placeholder="Кол-во связок/штук в одном подъеме">
+                    </div>
+                    <div class="field-block">
+                        <label for="crain">Грузоподъемность крана</label>
+                        <input id="crain" class="field" name="lift" required type="number" value=""  placeholder="Грузоподъемность (кг.)">
+                    </div>
+                    <div class="field-block">
+                        <label for="surv1">Вес сюрвейера 1</label>
+                        <input id="survei1" class="field" name="lift" required type="number" value=""  placeholder="Вес сюрвейера (кг.)">
+                    </div>
+                    <div class="field-block">
+                        <label for="surv2">Вес сюрвейера 2</label>
+                        <input id="survei2" class="field" name="lift" required type="number" value=""  placeholder="Вес сюрвейера (кг.)">
+                    </div>
+                    <button id="button" class="button" onclick="calculate()">ПОДСЧЕТ</button>
+                </form>
+            </div>
+            
+</div>
+  <!--<script src="./js.js"></script>-->
+ <script src="./vehicles.js"></script>
+</body>
+</html>
+
+
