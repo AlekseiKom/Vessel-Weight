@@ -8,7 +8,6 @@ function calculate() {
     let survNumber1 =  document.getElementById("survei1").value; 
     let survNumber2 =  document.getElementById("survei2").value; 
 
-
     
     
     document.write("<br/>" + "<br/>" + "Введенный общий вес (брутто): " + resultWeight + "кг.");
