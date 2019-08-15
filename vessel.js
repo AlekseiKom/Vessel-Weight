@@ -1,28 +1,30 @@
 
 function calculate() {
-
+    
+    //ввод данных 
     let resultWeight = document.getElementById("weight").value;
-    document.write("<br/>" + "<br/>" + "Введенный общий вес (брутто): " + resultWeight + " кг.");
-    
     let itemsSum = document.getElementById("totalUnits").value;
-    document.write("<br/>" + "<br/>" + "Общее кол-во штук/связок: " + itemsSum + " шт/св.");
-
-    let oneItemWeight = resultWeight/itemsSum;
-    oneItemWeight = oneItemWeight.toFixed(2); 
-    document.write("<br/>" + "<br/>" + "Средний вес одной связки: " + oneItemWeight + " кг.");
-
+    let weightOneItem = resultWeight/itemsSum;
+    oneItemWeight = weightOneItem.toFixed(2); 
     let survNumber1 =  document.getElementById("survei1").value; 
+    let piecesSurvNumber1 = Math.floor(survNumber1/oneItemWeight);
     let survNumber2 =  document.getElementById("survei2").value; 
+    let piecesSurvNumber2 = Math.floor(survNumber2/oneItemWeight);
+    let liftSum = document.getElementById("lift").value;
+  
+    //вывод введеных данныс с расчетом среднего веса 1 связки/шт.;постчет кол-ва связок по весу сюрвея
+    document.write("<br/>" + "<br/>"
+     + "Введенный общий вес (брутто): " + resultWeight + " кг."+ "<br/>"
+     + "Общее кол-во шт./св.: " + itemsSum + " шт./св."
+     + "<br/>" + "Средний вес одной связки: " + oneItemWeight + " кг."
+     + "<br/>" + "Введенное общее кол-во св./шт. в одном подъеме: " + liftSum + " св./шт."
+     + "<br/>" + "Кол-во связок и вес в первом контрольном взвешивании: " + piecesSurvNumber1 + " св./шт." + survNumber1 + " кг."
+     + "<br/>" + "Кол-во связок и вес во втором контрольном взвешивании: " + piecesSurvNumber2 + " св./шт." + survNumber2 + " кг.");
     
-    let piecesSurvNumber1 = Math.floor(survNumber1/piecesInlustLift);
-    document.write("<br/>" + "<br/>" + "Кол-во связок в первом контрольном взвешивании: " + piecesSurvNumber1 + " св/шт.");
-    let piecesSurvNumber2 = Math.floor(survNumber2/piecesInlustLift);
-    document.write("<br/>" + "<br/>" + "Кол-во связок во втором контрольном взвешивании: " + piecesSurvNumber2 + " св/шт.");
+  
+    
 
-    let liftSum = document.getElementById("lift").value; 
-    document.write("<br/>" + "<br/>" + "Введенный общее кол-во св/шт в одном подъеме: " + liftSum + " св/шт.");
-
-   /*
+    
     //расчет кол-ва подьемов
     
     let liftSumPreTotal = Math.floor(itemsSum/liftSum);
