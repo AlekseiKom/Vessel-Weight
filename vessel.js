@@ -2,24 +2,28 @@
 function calculate() {
 
     let resultWeight = document.getElementById("weight").value;
+    document.write("<br/>" + "<br/>" + "Введенный общий вес (брутто): " + resultWeight + " кг.");
+    
     let itemsSum = document.getElementById("totalUnits").value;
-    let liftSum = document.getElementById("lift").value; 
+    document.write("<br/>" + "<br/>" + "Общее кол-во штук/связок: " + itemsSum + " шт/св.");
+
+    let oneItemWeight = resultWeight/itemsSum;
+    oneItemWeight = oneItemWeight.toFixed(2); 
+    document.write("<br/>" + "<br/>" + "Средний вес одной связки: " + oneItemWeight + " кг.");
+
     let survNumber1 =  document.getElementById("survei1").value; 
     let survNumber2 =  document.getElementById("survei2").value; 
+    
+    let piecesSurvNumber1 = Math.floor(survNumber1/piecesInlustLift);
+    document.write("<br/>" + "<br/>" + "Кол-во связок в первом контрольном взвешивании: " + piecesSurvNumber1 + " св/шт.");
+    let piecesSurvNumber2 = Math.floor(survNumber2/piecesInlustLift);
+    document.write("<br/>" + "<br/>" + "Кол-во связок во втором контрольном взвешивании: " + piecesSurvNumber2 + " св/шт.");
 
-    
-    
-    document.write("<br/>" + "<br/>" + "Введенный общий вес (брутто): " + resultWeight + "кг.");
-    document.write("<br/>" + "<br/>" + "Общее кол-во связок: " + itemsSum + " шт.");
-    document.write("<br/>" + "<br/>" + "Средний вес одной связки: " + oneItemWeight + "кг.");
-    document.write ("<br/" + "<br/>" + "Количество подъемов по " + liftSum + " шт: " + liftSumPreTotal + ".");
-    document.write ("<br/" + "<br/>" + "Количество св/шт в последнем подъеме" + piecesInlustLift + ".");
-    document.write ("<br/" + "<br/>" + "Общее количество подъемов: " + liftSumTotal);
-    
-    
+    let liftSum = document.getElementById("lift").value; 
+    document.write("<br/>" + "<br/>" + "Введенный общее кол-во св/шт в одном подъеме: " + liftSum + " св/шт.");
+
+   /*
     //расчет кол-ва подьемов
-
-    
     
     let liftSumPreTotal = Math.floor(itemsSum/liftSum);
     let piecesInlustLift = itemsSum - (liftSumPreTotal * liftSum );
@@ -40,11 +44,9 @@ function calculate() {
     
     let liftSumTotal = liftSumPreTotal + lustLift;
     
-    
-    //вес одной связки
-    let oneItemWeight = resultWeight/itemsSum;
-    oneItemWeight = oneItemWeight.toFixed(2); 
-    
+    document.write ("<br/" + "<br/>" + "Количество подъемов по " + liftSum + " шт: " + liftSumPreTotal + ".");
+    document.write ("<br/" + "<br/>" + "Количество св/шт в последнем подъеме" + piecesInlustLift + ".");
+    document.write ("<br/" + "<br/>" + "Общее количество подъемов: " + liftSumTotal);
     
     
     // количество связок в одном подъеме.
@@ -85,7 +87,7 @@ function calculate() {
     else {
         alert ("Что-то пошло не так ((()))")
     }
-    
+    */
     //end function calculate
     }
 
