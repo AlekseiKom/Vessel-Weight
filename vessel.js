@@ -1,7 +1,7 @@
 
 function calculate() {
     
-    //ввод данных 
+    //Ввод данных 
     let resultWeight = document.getElementById("weight").value;
     let itemsSum = document.getElementById("totalUnits").value;
     let weightOneItem = resultWeight/itemsSum;
@@ -12,7 +12,7 @@ function calculate() {
     let piecesSurvNumber2 = Math.floor(survNumber2/oneItemWeight);
     let liftSum = document.getElementById("lift").value;
   
-    //вывод введеных данныс с расчетом среднего веса 1 связки/шт.;постчет кол-ва связок по весу сюрвея
+    //Вывод введеных данныс с расчетом среднего веса 1 связки/шт.;постчет кол-ва связок по весу сюрвея
     document.write("<br/>" + "<br/>"
      + "Введенный общий вес (брутто): " + resultWeight + " кг."+ "<br/>"
      + "Общее кол-во шт./св.: " + itemsSum + " шт./св."
@@ -21,13 +21,8 @@ function calculate() {
      + "<br/>" + "Кол-во связок и вес в первом контрольном взвешивании: " + piecesSurvNumber1 + " св./шт." + survNumber1 + " кг."
      + "<br/>" + "Кол-во связок и вес во втором контрольном взвешивании: " + piecesSurvNumber2 + " св./шт." + survNumber2 + " кг.");
     
-  
-    
-
-    
-    //расчет кол-ва подьемов
-    
-    let liftSumPreTotal = Math.floor(itemsSum/liftSum);
+    //Основной расчет кол-ва подьемов
+    let liftSumPreTotal = Math.floor((itemsSum-piecesSurvNumber1-piecesSurvNumber2)/liftSum);
     let piecesInlustLift = itemsSum - (liftSumPreTotal * liftSum );
     
     if (piecesInlustLift > 0) {
