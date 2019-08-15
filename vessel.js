@@ -21,6 +21,7 @@ function calculate() {
      + "<br/>" + "Кол-во связок и вес в первом контрольном взвешивании: " + piecesSurvNumber1 + " св./шт." + survNumber1 + " кг."
      + "<br/>" + "Кол-во связок и вес во втором контрольном взвешивании: " + piecesSurvNumber2 + " св./шт." + survNumber2 + " кг.");
     
+    /*
     //Основной расчет кол-ва подьемов
     let liftSumPreTotal = Math.floor((itemsSum-piecesSurvNumber1-piecesSurvNumber2)/liftSum);
     let piecesInlustLift = itemsSum - (liftSumPreTotal * liftSum );
