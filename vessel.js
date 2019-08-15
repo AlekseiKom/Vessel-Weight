@@ -4,7 +4,6 @@ function calculate() {
     let resultWeight = document.getElementById("weight").value;
     let itemsSum = document.getElementById("totalUnits").value;
     let liftSum = document.getElementById("lift").value; 
-    let crainWeight = document.getElementById("crain").value; 
     let survNumber1 =  document.getElementById("survei1").value; 
     let survNumber2 =  document.getElementById("survei2").value; 
 
