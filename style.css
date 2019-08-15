@@ -2,6 +2,7 @@
 body {
     background: linear-gradient(#1963d3,#41f098);
     background-repeat: no-repeat;
+    min-height: 940px;
     text-align: center;
 }
 .header {
