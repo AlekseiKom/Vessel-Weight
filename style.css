@@ -2,10 +2,11 @@
 body {
     background: linear-gradient(#1963d3,#41f098);
     background-repeat: no-repeat;
-    min-height: 940px;
+    height: 1440px;
     text-align: center;
 }
 .header {
+    margin-top:20px;
     text-align: center;
     background: linear-gradient(#1284c7,#3dd9f5);
     background-repeat: no-repeat;
