@@ -1,8 +1,7 @@
 
 body {
     background: linear-gradient(#1963d3,#41f098);
-    background-repeat: no-repeat;
-    height: 1440px;
+    height: 960px;
     text-align: center;
 }
 .header {
@@ -95,6 +94,11 @@ body {
                        color: #fefeff;
                  }
 .wrap-Grid {
+    background-image: url("./SRC/web.png");
+    height:960px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
