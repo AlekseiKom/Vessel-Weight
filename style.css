@@ -1,7 +1,6 @@
 
 body {
     background: linear-gradient(#1963d3,#41f098);
-    height: 960px;
     text-align: center;
 }
 .header {
@@ -95,7 +94,6 @@ body {
                  }
 .wrap-Grid {
     background-image: url("./SRC/web.png");
-    height:960px;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
