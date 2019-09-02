@@ -11,6 +11,11 @@ body {
     background-repeat: no-repeat;
     border-radius: 20px;
     color: #ebeff7;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+            -23px 0 20px -23px rgba(0, 0, 0, .6),
+            23px 0 20px -23px rgba(0, 0, 0, .6),
+            inset 0 0 40px rgba(0, 0, 0, .1);
+
 }
 .article  {
     width:300px;
@@ -19,6 +24,11 @@ body {
     border-radius: 20px;
     text-align: center;
     color: #424141;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+            -23px 0 20px -23px rgba(0, 0, 0, .6),
+            23px 0 20px -23px rgba(0, 0, 0, .6),
+            inset 0 0 40px rgba(0, 0, 0, .1);
+
 }  
 
 .container {
@@ -28,7 +38,11 @@ body {
         padding: 10px;
         border-radius: 4px;
         background-color: inherit;
-        box-shadow: 0 0 3px #666;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+            -23px 0 20px -23px rgba(0, 0, 0, .6),
+            23px 0 20px -23px rgba(0, 0, 0, .6),
+            inset 0 0 40px rgba(0, 0, 0, .1);
+
      }
 
      .field-block {
