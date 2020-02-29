@@ -117,7 +117,19 @@ h1 {
                     background: #fff;
                     border-radius: 7px;
                 }
-                
+
+
+
+                .testResult {
+                    min-height: 20px;
+                    min-width: 20px;
+                    border-radius:10px ;
+                    background-color: #3a7aa5;
+                    color: #d8c3c3;
+                }
+
+
+
 .wrap-Grid {
     background-image: url("./SRC/web.png");
     height:960px;
