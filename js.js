@@ -11,6 +11,7 @@ function calculate() {
 
 let resultWeight = document.getElementById("weight").value;
 let itemsSum = document.getElementById("totalUnits").value;
+
 let liftSum = document.getElementById("lift").value; 
 
 
