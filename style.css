@@ -3,9 +3,11 @@ body {
     background: linear-gradient(#1963d3,#41f098);
     height: 960px;
     text-align: center;
+    font-family: 'Teko';
 }
 .header {
     margin-top:20px;
+    font-family: 'Teko';
     text-align: center;
     background: linear-gradient(#1284c7,#3dd9f5);
     background-repeat: no-repeat;
@@ -16,6 +18,9 @@ body {
             23px 0 20px -23px rgba(0, 0, 0, .6),
             inset 0 0 40px rgba(0, 0, 0, .1);
 
+}
+h1 {
+    padding: 10px;
 }
 .article  {
     width:300px;
@@ -107,6 +112,12 @@ body {
                     font-size: 25px;
                        color: #fefeff;
                  }
+
+                 .expl {
+                    background: #fff;
+                    border-radius: 7px;
+                }
+                
 .wrap-Grid {
     background-image: url("./SRC/web.png");
     height:960px;
