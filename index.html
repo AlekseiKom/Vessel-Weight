@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="wrap-Grid">
+<div class="wrap-Grid">
 <div class="header"><h1><i>Контрольная перевеска на судно.</i></h1>
     <p class="text"><bold>(арматура, заготовка)</bold></p>
 </div>
@@ -17,35 +17,34 @@
         <div class="container">
                 <form id="calculateForm" action=""  method="post">    <!-- <?= $_SERVER['PHP_SELF']?> -->
                     <div class="field-block">
-                        <label for="weight">Общий вес: </label>
-                        <input id="weight" class="field" name="weightTotal" value="" required type="number" placeholder="Общий вес (брутто) с погр. (до 10 кг.)">
+                        <label for="weight">Общий вес (кг.): </label>
+                        <input id="weight" class="field" name="weightTotal" value="" type="number" placeholder="Общий вес (брутто) с погр. (до 10 кг.)">
                     </div>
                     <div class="field-block">
-                        <label for="totalUnits">Всего связок: </label>
-                        <input id="totalUnits" class="field" name="totalUnits" value=""  required type="number" placeholder="Общее кол-во связок/штук.">
+                        <label for="totalUnits">Всего связок/шт.: </label>
+                        <input id="totalUnits" class="field" name="totalUnits" value=""  type="number" placeholder="Общее кол-во связок/штук.">
                     </div>
                     <div class="field-block">
                         <label for="lift">Св./шт. в одном подъеме:</label>
-                        <input id="lift" class="field" name="lift" required type="number" value=""  placeholder="Кол-во связок/штук в одном подъеме">
+                        <input id="lift" class="field" name="lift" type="number" value=""  placeholder="Кол-во связок/штук в одном подъеме">
                     </div>
                     <div class="field-block">
-                        <label for="surv1">Вес сюрвейера 1</label>
-                        <input id="survei1" class="field" name="lift" required type="number" value=""  placeholder="Вес сюрвейера (кг.)">
+                        <label for="surv1">Вес сюрвейера 1(кг.)</label>
+                        <input id="survei1" class="field" name="lift" type="number" value=""  placeholder="Вес сюрвейера (кг.)">
                     </div>
                     <div class="field-block">
-                        <label for="surv2">Вес сюрвейера 2</label>
-                        <input id="survei2" class="field" name="lift" required type="number" value=""  placeholder="Вес сюрвейера (кг.)">
+                        <label for="surv2">Вес сюрвейера 2(кг.)</label>
+                        <input id="survei2" class="field" name="lift" type="number" value=""  placeholder="Вес сюрвейера (кг.)">
                     </div>
-                    <button id="button" class="button" onclick="calculate()">ПОДСЧЕТ</button>
+                    <button id="button" class="button" onclick="calculate()" type="submit">ПОДСЧЕТ</button>
 
                 </form>
                 <p class="expl"><i>Если вес от сюрвейера не указан - </br> введите произвольный вес </br>в графу вес сюрвейера 1, 2. </i></p>
             </div>  
 </div>
- <script src="./newJS.js"></script>
-<div class="testResult" id="testResult">
-
+<div class="testResult" id="testResult"></div>
 </div>
+<script src="./newJS.js"></script>
 </body>
 </html>
 

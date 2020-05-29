@@ -121,6 +121,7 @@ h1 {
 
 
                 .testResult {
+                    padding: 10px;
                     min-height: 20px;
                     min-width: 20px;
                     border-radius:10px ;

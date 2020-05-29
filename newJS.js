@@ -1,16 +1,21 @@
 
-function calculate() {
+    function calculate() {
+     event.preventDefault();
 
-    let resultWeight = document.getElementById("weight").value;
-    let itemsSum = document.getElementById("totalUnits").value;
-    let liftSum = document.getElementById("lift").value; 
-    let surWeight1 = document.getElementById("surv1").value; 
-    let surWeight2 = document.getElementById("surv2").value; 
-    let resultField = document.getElementById("testResult"); 
-    
+    let totalWeight = document.getElementById("weight").value; //Общий вес
+    let itemsSum = document.getElementById("totalUnits").value;  //Общее кол-во св/шт
+    let liftSum = document.getElementById("lift").value;   //Ко-во в одном подъеме
+    let surWeight1 = document.getElementById("survei1").value; //Вес сюрв. 1
+    let surWeight2 = document.getElementById("survei2").value; //Вес сюрв. 2
+    let resultField = document.getElementById("testResult");  //Окно результата 
 
-    parseInt(resultField.innerHTML)=resultWeight;
+
+     let oneItem = parseFloat(totalWeight/itemsSum);
+     resultField.innerHTML= "Вес одной св/шт. = " + oneItem;
+     
+     
 
     }
+
 
     
