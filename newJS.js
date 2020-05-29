@@ -18,12 +18,35 @@
 
      liftSumWeight = roundTo10(liftSumItems*oneItemWeight); //расчет веса одного подъема
 
-     //Вывод основных данных
+      //Вывод основных данных
      resultField.innerHTML= 
      "Введенный общий вес (брутто) :  "  +  totalWeight + " кг." + "<br>" +
      "Общее кол-во св/шт. :  "  +  itemsSum + " ." + "<br>" +
      "Средний вес одной св/шт. :  " + oneItemWeight + " кг." + "<br>" +
      "Средний вес одного подъема из " + liftSumItems + " св/шт." + " =  " + liftSumWeight + " кг."; 
+     
+      
+     //Расчет основной перевески
+      
+      let totaLiftSum, lastLiftItems, lastLift;
+
+      lastLiftItems =  itemsSum - liftSumItems*(Math.floor(itemsSum/liftSumItems)); //Расчет кол-ва в последнем подъеме
+      if (lastLiftItems > 0) {
+        lastLift = 1
+       }
+      else {
+        lastLift = 0;
+       }
+
+      totaLiftSum = Math.floor(itemsSum/liftSumItems) + lastLift; //Общее кол-во подъемов
+     
+      console.log(lastLiftItems);
+      console.log(totaLiftSum);
+
+      
+
+
+
 
     }
 
