@@ -42,9 +42,14 @@
      
       console.log(lastLiftItems);
       console.log(totaLiftSum);
-
       
-
+      let weightSum = 0;
+      for (i=0; i<totaLiftSum; i++) {
+        
+      } 
+        
+    
+      
 
 
 
