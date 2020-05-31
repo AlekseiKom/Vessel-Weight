@@ -30,7 +30,11 @@
       
       let totaLiftSum, lastLiftItems, lastLift;
 
-      lastLiftItems =  itemsSum - liftSumItems*(Math.floor(itemsSum/liftSumItems)); //Расчет кол-ва в последнем подъеме
+      mainLiftsSumItems = liftSumItems*(Math.floor(itemsSum/liftSumItems)); //расчет кол-ва св./шт без последнего подъема
+      mainLifts = mainLiftsSumItems/liftSumItems; //расчет основного кол-ва подъемов
+
+
+      lastLiftItems =  itemsSum - mainLiftsSumItems //Расчет кол-ва в последнем подъеме
       if (lastLiftItems > 0) {
         lastLift = 1
        }
@@ -39,13 +43,16 @@
        }
 
       totaLiftSum = Math.floor(itemsSum/liftSumItems) + lastLift; //Общее кол-во подъемов
-     
-      console.log(lastLiftItems);
-      console.log(totaLiftSum);
       
-      let weightSum = 0;
-      for (i=0; i<totaLiftSum; i++) {
-        
+      //тестовая проверка
+      console.log('Основное число подъемов (кол-во) = ' + mainLifts + ' по ' + liftSumItems + ' св./шт')
+      console.log('Кол-во в основных подъемах = ' + mainLiftsSumItems);
+      console.log('Кол-во в последнем подъеме = ' + lastLiftItems);
+      console.log('Общее кол-во подъемов = ' + totaLiftSum);
+      
+      let weightSum = [];
+      for (i=1; i<=totaLiftSum; i++) {
+        console.log(i)
       } 
         
     
