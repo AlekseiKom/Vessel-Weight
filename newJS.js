@@ -46,7 +46,7 @@
       totaLiftSum = Math.floor(itemsSum/liftSumItems) + lastLift;  //Общее кол-во подъемов
 
       let weightSum = [];
-      for (i=1; i<=totaLiftSum; i++) {
+      for (i=1; i<= mainLifts; i++) {
         console.log(i)
       } 
         
