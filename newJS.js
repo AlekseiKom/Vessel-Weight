@@ -50,13 +50,13 @@
       
       /*function getRandomInt(max) {
         return Math.floor(Math.random() * Math.floor(max));
-      }*/
+      }
   
       let randArr = [10, -10, 20 ,-20, 0, 30, -30, 40, -40]        
       let rand = Math.floor(Math.random() * randArr.length);
       let diff = randArr[rand];
 
-      console.log(diff);
+      console.log(diff);*/
     
       let weightSum = []; 
 
@@ -66,25 +66,37 @@
       if (lastLift > 0) {
       weightSum.push(lastLiftWeight);
       }
-    
-      const array1 = [100, 150, 200];         //рабочий рандомайзер для массива
+                                                                    //Рабочий рандомайзер для массива
+      weightSumLust = [];                                                            
       let arr = new Array(10, 20, 30, 40, 0, -10, -20, -30, -40); 
-      for (let index = 0; index < array1.length; ++index) {
+      for (let index = 0; index < weightSum.length; ++index) {
           let randElement = arr[Math.floor(Math.random()*(arr.length))];
-          let value =array1[index] + randElement;
-           console.log("Value is: " + value);
-           
+          let value =weightSum[index] + randElement;
+          weightSumLust.push(value);
       }
-      
+
+                                                                    //Сумма элементов массива
+      function arraySum(array){
+      let sum = 0;
+      for(var i = 0; i < array.length; i++){
+          sum += array[i];
+          }
+          return sum;    
+      }
+
+      let correction = totalWeight - (arraySum(weightSumLust));     //Разница с основным весом
+    
+
       
       //тестовая проверка
       console.log('Основное число подъемов (кол-во) = ' + mainLifts + ' по ' + liftSumItems + ' св./шт')
       console.log('Кол-во в основных подъемах = ' + mainLiftsSumItems);
       console.log('Кол-во в последнем подъеме = ' + lastLiftItems);
       console.log('Общее кол-во подъемов = ' + totaLiftSum);
-      console.log(weightSum);
-    
-      
+      console.log("Предварительный массив  " + weightSum);
+      console.log('Обработанный массив без корректировки  ' + weightSumLust);
+      console.log('Сумма элементов массива = ' + arraySum(weightSumLust));
+      console.log('Разница с основным весом = ' + correction); 
     
       
 
