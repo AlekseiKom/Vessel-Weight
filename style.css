@@ -1,7 +1,7 @@
 
 body {
     background: linear-gradient(#1963d3,#41f098);
-    height: 960px;
+    height: 1500px;
     text-align: center;
     font-family: 'Teko';
 }
@@ -128,6 +128,15 @@ h1 {
                     background-color: #3a7aa5;
                     color: #d8c3c3;
                 }
+                /*.mainResult {
+                    padding: 10px;
+                    min-height: 20px;
+                    min-width: 20px;
+                    border-radius:10px ;
+                    background-color: #9dc0d8;
+                    color: #3f2626;
+                }*/
+
 
 
 

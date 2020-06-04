@@ -7,18 +7,18 @@
     let liftSumItems = document.getElementById("lift").value;    //Ко-во в одном подъеме
     let surWeight1 = document.getElementById("survei1").value;   //Вес сюрв. 1
     let surWeight2 = document.getElementById("survei2").value;   //Вес сюрв. 2
-    let resultField = document.getElementById("testResult");     //Окно результата 
+    let resultField = document.getElementById("testResult");     //Окно предварительного расчета 
+    //let mainResultField = document.getElementById("mainResult");  //Окно основной перевески 
 
-
-     let oneItemWeight = parseFloat(totalWeight/itemsSum);         //рассчет веса одной св./шт.
+     let oneItemWeight = parseFloat(totalWeight/itemsSum);         //Рассчет веса одной св./шт.
     
        function roundTo10(num) {      //округление до 10
         return Math.round(num/10)*10;
         }
 
-     liftSumWeight = roundTo10(liftSumItems*oneItemWeight);        //расчет веса одного подъема
+     liftSumWeight = roundTo10(liftSumItems*oneItemWeight);        //Расчет веса одного подъема
 
-      //Вывод основных данных
+                                                                   //Вывод предварительных данных для расчета
      resultField.innerHTML= 
      "Введенный общий вес (брутто) :  "  +  totalWeight + " кг." + "<br>" +
      "Общее кол-во св/шт. :  "  +  itemsSum + " ." + "<br>" +
@@ -30,9 +30,9 @@
       
       let totaLiftSum, lastLiftItems, lastLift;
 
-      mainLiftsSumItems = liftSumItems*(Math.floor(itemsSum/liftSumItems)); //расчет кол-ва св./шт без последнего подъема 
+      mainLiftsSumItems = liftSumItems*(Math.floor(itemsSum/liftSumItems)); //Расчет кол-ва св./шт без последнего подъема 
 
-      mainLifts = mainLiftsSumItems/liftSumItems;                  //расчет основного кол-ва подъемов
+      mainLifts = mainLiftsSumItems/liftSumItems;                  //Расчет основного кол-ва подъемов
 
       lastLiftItems =  itemsSum - mainLiftsSumItems                //Расчет кол-ва в последнем подъеме
       if (lastLiftItems > 0) {
@@ -88,7 +88,7 @@
     
 
       
-      //тестовая проверка
+      //тестовый вывод
       console.log('Основное число подъемов (кол-во) = ' + mainLifts + ' по ' + liftSumItems + ' св./шт')
       console.log('Кол-во в основных подъемах = ' + mainLiftsSumItems);
       console.log('Кол-во в последнем подъеме = ' + lastLiftItems);
@@ -98,7 +98,6 @@
       console.log('Сумма элементов массива = ' + arraySum(weightSumLust));
       console.log('Разница с основным весом = ' + correction); 
     
-      
 
 
 
