@@ -67,6 +67,14 @@
       weightSum.push(lastLiftWeight);
       }
     
+      const array1 = [100, 150, 200];         //рабочий рандомайзер для массива
+      let arr = new Array(10, 20, 30, 40, 0, -10, -20, -30, -40); 
+      for (let index = 0; index < array1.length; ++index) {
+          let randElement = arr[Math.floor(Math.random()*(arr.length))];
+          let value =array1[index] + randElement;
+           console.log("Value is: " + value);
+           
+      }
       
       
       //тестовая проверка
