@@ -85,7 +85,47 @@
       }
 
       let correction = totalWeight - (arraySum(weightSumLust));     //Разница с основным весом
-    
+      
+       if (correction%2 == 0) {
+         corePart = correction/2;
+         console.log("Разница кратна 2 и = " + corePart);
+       }
+       else if (correction%3 == 0) {
+        corePart = correction/3; 
+        console.log("Разница кратна 3 и = " + corePart);
+       }
+       else if (correction%4 == 0) {
+        corePart = correction/4; 
+        console.log("Разница кратна 4 и = " + corePart);
+       }
+       else if (correction%5 == 0) {
+        corePart = correction/5; 
+        console.log("Разница кратна 5 и = " + corePart);
+       }
+       else if (correction%6 == 0) {
+        corePart = correction/6; 
+        console.log("Разница кратна 6 и = " + corePart);
+       }
+       else if (correction%7 == 0) {
+        corePart = correction/7; 
+        console.log("Разница кратна 7 и = " + corePart);
+       }
+       else if (correction%8 == 0) {
+        corePart = correction/8; 
+        console.log("Разница кратна 8 и = " + corePart);
+       }
+       else if (correction%9 == 0) {
+        corePart = correction/9; 
+        console.log("Разница кратна 9 и = " + corePart);
+       }
+       else if (correction == 0 || 10 || -10 ) { 
+        corePart = correction; 
+        console.log("Разница невелика и = " + corePart);
+       }
+       else {
+        corePart = correction; 
+        console.log("Разница = " + corePart);
+       }
 
       
       //тестовый вывод
