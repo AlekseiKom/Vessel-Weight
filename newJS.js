@@ -125,7 +125,6 @@
         weightSumLust[2] = weightSumLust[2] + (correction + 80);
       }  
     
-      
       else {
         weightSumLust[0] = weightSumLust[0] + correction; 
       } 
