@@ -88,11 +88,11 @@
 
       let correction = totalWeight - (arraySum(weightSumLust));     //Разница с основным весом
        
-      if (correction <= 80) {
+      if (correction <= 80) {                                       //Распределение разницы по элементам массива
       weightSumLust[0] = weightSumLust[0] + correction; 
       } 
       else if (80 <= correction <= 200) {
-      weightSumLust[0] = weightSumLust[0] + (80);
+      weightSumLust[0] = weightSumLust[0] + 80;
       weightSumLust[2] = weightSumLust[2] + (correction - 80);
       }  
       else if (200 <= correction <= 300 ){
@@ -100,7 +100,24 @@
         weightSumLust[2] = weightSumLust[2] + 70; 
         weightSumLust[4] = weightSumLust[4] + 60;
         weightSumLust[6] = weightSumLust[6] + (correction-200);
-      }   
+      }  
+      else if (300 <= correction <= 400 ){
+        weightSumLust[0] = weightSumLust[0] + 70;
+        weightSumLust[2] = weightSumLust[2] + 80; 
+        weightSumLust[3] = weightSumLust[3] + 70; 
+        weightSumLust[5] = weightSumLust[5] + 80;
+        weightSumLust[6] = weightSumLust[6] + (correction-300);
+      }    
+      else if (300 <= correction <= 400 ){
+        weightSumLust[0] = weightSumLust[0] + 70;
+        weightSumLust[2] = weightSumLust[2] + 80; 
+        weightSumLust[3] = weightSumLust[3] + 70; 
+        weightSumLust[5] = weightSumLust[5] + 80;
+        weightSumLust[6] = weightSumLust[6] + (correction-300);
+      } 
+       
+    
+      
       else {
         weightSumLust[0] = weightSumLust[0] + correction; 
       } 
