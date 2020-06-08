@@ -69,13 +69,12 @@
       console.log("Предварительный массив  " + weightSum);
                                                                     //Рабочий рандомайзер для массива
       weightSumLust = [];                                                            
-      let arr = new Array(10, 20, 10, 0, 30, 40, 0, -10, -20, 0, 10, -30, -40); 
+      let arr = new Array(10, 20, 0, 30, 40, 0, -10, -20, 0, -30, -40); 
       for (let index = 0; index < weightSum.length; ++index) {
           let randElement = arr[Math.floor(Math.random()*(arr.length))];
           let value =weightSum[index] + randElement;
           weightSumLust.push(value);
       }
-      console.log('Обработанный массив без корректировки  ' + weightSumLust);
 
                                                                     //Сумма элементов массива
       function arraySum(array){
@@ -174,6 +173,7 @@
       console.log('Общее кол-во подъемов = ' + totaLiftSum);
       console.log('Сумма элементов массива = ' + arraySum(weightSumLust));
       console.log('Разница с основным весом = ' + correction); 
+      console.log('Обработанный массив без корректировки  ' + weightSumLust);
       console.log("Массив с учетом корректировки:  " + weightSumLust)
     
 
