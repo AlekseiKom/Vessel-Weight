@@ -75,6 +75,8 @@
           let value =weightSum[index] + randElement;
           weightSumLust.push(value);
       }
+      
+      console.log('Обработанный массив без корректировки  ' + weightSumLust);
 
                                                                     //Сумма элементов массива
       function arraySum(array){
@@ -84,6 +86,7 @@
           }
           return sum;    
       }
+      
 
       let correction = totalWeight - (arraySum(weightSumLust));     //Разница с основным весом
        
@@ -114,7 +117,10 @@
         weightSumLust[5] = weightSumLust[5] + 80;
         weightSumLust[6] = weightSumLust[6] + (correction-300);
       } 
-       
+        
+      else if (correction >= -80) {                                       //Распределение разницы по элементам массива
+        weightSumLust[0] = weightSumLust[0] + correction; 
+        } 
     
       
       else {
@@ -173,7 +179,6 @@
       console.log('Общее кол-во подъемов = ' + totaLiftSum);
       console.log('Сумма элементов массива = ' + arraySum(weightSumLust));
       console.log('Разница с основным весом = ' + correction); 
-      console.log('Обработанный массив без корректировки  ' + weightSumLust);
       console.log("Массив с учетом корректировки:  " + weightSumLust)
     
 
