@@ -59,10 +59,8 @@
       console.log(diff);*/
     
       let weightSum = []; 
-      weightSum[3]=surWeight1;
-      weightSum[5]=surWeight2;
 
-      for (step = 0; step < mainLifts - 2 ; step++) {
+      for (step = 0; step < mainLifts; step++) {
         weightSum.push(liftSumWeight);
       }
       if (lastLift > 0) {
