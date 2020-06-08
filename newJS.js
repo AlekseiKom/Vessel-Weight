@@ -117,7 +117,7 @@
         weightSumLust[5] = weightSumLust[5] + 80;
         weightSumLust[6] = weightSumLust[6] + (correction-300);
       }
-      else if (correction >= -80) {                                       //Распределение разницы по элементам массива
+      else if (correction >= -80) {                                      
         weightSumLust[0] = weightSumLust[0] + correction; 
       }  
       else if (-80 >= correction >= -200) {
