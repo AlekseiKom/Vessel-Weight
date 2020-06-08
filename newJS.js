@@ -75,7 +75,7 @@
           let value =weightSum[index] + randElement;
           weightSumLust.push(value);
       }
-      
+
       console.log('Обработанный массив без корректировки  ' + weightSumLust);
 
                                                                     //Сумма элементов массива
@@ -116,11 +116,14 @@
         weightSumLust[3] = weightSumLust[3] + 70; 
         weightSumLust[5] = weightSumLust[5] + 80;
         weightSumLust[6] = weightSumLust[6] + (correction-300);
-      } 
-        
+      }
       else if (correction >= -80) {                                       //Распределение разницы по элементам массива
         weightSumLust[0] = weightSumLust[0] + correction; 
-        } 
+      }  
+      else if (-80 >= correction >= -200) {
+        weightSumLust[0] = weightSumLust[0] + (-80);
+        weightSumLust[2] = weightSumLust[2] + (correction + 80);
+      }  
     
       
       else {
