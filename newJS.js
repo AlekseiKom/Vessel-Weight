@@ -8,7 +8,7 @@
     let surWeight1 = document.getElementById("survei1").value;   //Вес сюрв. 1
     let surWeight2 = document.getElementById("survei2").value;   //Вес сюрв. 2
     let resultField = document.getElementById("testResult");     //Окно предварительного расчета 
-    //let mainResultField = document.getElementById("mainResult");  //Окно основной перевески 
+    let mainResultField = document.getElementById("mainResult");  //Окно основной перевески 
 
      let oneItemWeight = parseFloat(totalWeight/itemsSum);         //Рассчет веса одной св./шт.
     
@@ -175,18 +175,24 @@
 
       
       //тестовый вывод
+      
+      mainResultField.innerHTML = 
+      'Основное число подъемов (кол-во) = ' + mainLifts + ' по ' + liftSumItems + ' св./шт'  + "<br>" +
+      'Кол-во в основных подъемах = ' + mainLiftsSumItems + "<br>" +
+      'Кол-во в последнем подъеме = ' + lastLiftItems + "<br>" +
+      'Общее кол-во подъемов = ' + totaLiftSum + "<br>" +
+      'Сумма элементов массива = ' + arraySum(weightSumLust) + "<br>" +
+      'Разница с основным весом = ' + correction  + "<br>" +
+      "Массив с учетом корректировки:  " + weightSumLust + "<br>" 
+
+
+      /*
       console.log('Основное число подъемов (кол-во) = ' + mainLifts + ' по ' + liftSumItems + ' св./шт')
       console.log('Кол-во в основных подъемах = ' + mainLiftsSumItems);
       console.log('Кол-во в последнем подъеме = ' + lastLiftItems);
       console.log('Общее кол-во подъемов = ' + totaLiftSum);
       console.log('Сумма элементов массива = ' + arraySum(weightSumLust));
       console.log('Разница с основным весом = ' + correction); 
-      console.log("Массив с учетом корректировки:  " + weightSumLust)
+      console.log("Массив с учетом корректировки:  " + weightSumLust) */
     
-
-
-
-    }
-
-
-    
+      } 
