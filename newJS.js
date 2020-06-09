@@ -130,8 +130,6 @@
       } 
             
      
-
-
        /*  if (correction%2 == 0) {
          corePart = correction/2;
          console.log("Разница кратна 2 и = " + corePart);
