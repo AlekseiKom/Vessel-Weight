@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Контрольная перевеска на судно</title>
+    <title>Контрольная перевеска</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
 </head>
@@ -18,15 +18,15 @@
                 <form id="calculateForm" action=""  method="post">  
                     <div class="field-block">
                         <label for="weight">Общий вес (кг.): </label>
-                        <input id="weight" class="field" name="weightTotal" value=""  type="number" required placeholder="Общий вес (брутто) с погр. (до 10 кг.)">
+                        <input id="weight" class="field" required name="weightTotal" value=""  type="number"  placeholder="Общий вес (брутто) с погр. (до 10 кг.)">
                     </div>
                     <div class="field-block">
                         <label for="totalUnits">Всего связок/шт.: </label>
-                        <input id="totalUnits" class="field" name="totalUnits" value=""   type="number" required placeholder="Общее кол-во связок/штук.">
+                        <input id="totalUnits" class="field" required name="totalUnits" value=""   type="number"   placeholder="Общее кол-во связок/штук.">
                     </div>
                     <div class="field-block">
                         <label for="lift">Св./шт. в одном подъеме:</label>
-                        <input id="lift" class="field" name="lift" type="number" value=""  required  placeholder="Кол-во связок/штук в одном подъеме">
+                        <input id="lift" class="field" required name="lift" type="number" value=""   placeholder="Кол-во связок/штук в одном подъеме">
                     </div>
                     <!--<div class="field-block">
                         <label for="surv1">Вес сюрвейера 1(кг.)</label>
