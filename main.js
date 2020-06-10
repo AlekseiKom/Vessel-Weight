@@ -11,7 +11,8 @@
     let mainResultField = document.getElementById("mainResult");  //Окно основной перевески 
 
      if (totalWeight||itemsSum||liftSumItems == 0) {               //Проверка заполнения формы 
-      alert ('Все поля обязательны для заполнения и не должны быть равны или меньше нуля.')
+      alert ('Все поля обязательны для заполнения и не должны быть равны или меньше нуля.');
+      location.reload();
      }
 
      let oneItemWeight = parseFloat(totalWeight/itemsSum);         //Рассчет веса одной св./шт.
