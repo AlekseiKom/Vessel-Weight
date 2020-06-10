@@ -41,7 +41,7 @@ h1 {
         margin:0 auto;
         margin-top: 15px;
         margin-bottom: 15px;
-        max-width: 410px;
+        max-width: 395px;
         padding: 10px;
         border-radius: 14px;
         background-color: inherit;
@@ -137,6 +137,7 @@ h1 {
                     border-radius:15px ;
                     background: linear-gradient(#acd0e7,#3dd9f5);
                     color: #3f2626;
+                    word-wrap: break-word;
                 }
 
 
