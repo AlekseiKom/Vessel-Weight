@@ -10,6 +10,10 @@
     let resultField = document.getElementById("testResult");     //Окно предварительного расчета 
     let mainResultField = document.getElementById("mainResult");  //Окно основной перевески 
 
+     /*if (totalWeight||itemsSum||liftSumItems == 0) {               //Проверка заполнения формы 
+      alert ('Все поля обязательны для заполнения и не должны быть равны или меньше нуля.')
+     }*/
+
      let oneItemWeight = parseFloat(totalWeight/itemsSum);         //Рассчет веса одной св./шт.
     
        function roundTo10(num) {      //округление до 10
