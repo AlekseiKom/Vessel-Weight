@@ -10,10 +10,10 @@
     let resultField = document.getElementById("testResult");     //Окно предварительного расчета 
     let mainResultField = document.getElementById("mainResult");  //Окно основной перевески 
 
-     if (totalWeight||itemsSum||liftSumItems == 0) {               //Проверка заполнения формы /перезакгрузка страницы
+     /* if (totalWeight||itemsSum||liftSumItems = '') {               //Проверка заполнения формы /перезакгрузка страницы
       alert ('Все поля обязательны для заполнения и не должны быть равны или меньше нуля.');
-      location.reload();
-     }
+        // location.reload();
+     }*/
 
      let oneItemWeight = parseFloat(totalWeight/itemsSum);         //Рассчет веса одной св./шт.
     
