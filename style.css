@@ -6,9 +6,10 @@ body {
     /*font-family: 'Teko';*/
 }
 .header {
-    margin-top:30px;
+    margin-top:10px;
+    margin-bottom: -10px;
     /*font-family: 'Teko';*/
-    width:450px;
+    width:370px;
     text-align: center;
     background: linear-gradient(#1284c7,#3dd9f5);
     background-repeat: no-repeat;
@@ -24,7 +25,7 @@ h1 {
     padding: 10px;
        }
           .article  {
-         width:450px;
+         width:370px;
          background: linear-gradient(#3dd9f5,#dbe8f0);
          background-repeat: no-repeat;
          border-radius: 20px;
@@ -41,7 +42,7 @@ h1 {
         margin:0 auto;
         margin-top: 15px;
         margin-bottom: 15px;
-        max-width: 395px;
+        max-width: 330px;
         padding: 10px;
         border-radius: 14px;
         background-color: inherit;
@@ -124,16 +125,18 @@ h1 {
 
 
                 .testResult {
-                    width:440px;
+                    margin-top: -10px;
+                    max-width:360px;
                     padding: 10px;
                     border-radius:15px ;
                     background: linear-gradient(#dbe8f0,#acd0e7);
                     color: #201d1d;
+                    word-wrap: break-word;
                 }
                 .mainResult {
-                    margin-top: 30px;
+                    max-width:360px;
+                    margin: 10px;
                     padding: 10px;
-                    width:440px;
                     border-radius:15px ;
                     background: linear-gradient(#acd0e7,#3dd9f5);
                     color: #3f2626;
