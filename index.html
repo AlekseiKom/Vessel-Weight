@@ -10,7 +10,7 @@
 </head>
 <body>
 <div class="wrap-Grid">
-<div class="header"><h1><i>Контрольная перевеска на судно.</i></h1>
+<div class="header"><h1><i>Контрольная перевеска (выгрузка, погрузка на судно)</i></h1>
     <p class="text">(арматура, заготовка, уголок)</p>
 </div>
 <div class="article" id="mainText">
@@ -18,15 +18,15 @@
                 <form id="calculateForm" action=""  method="post">    <!-- <?= $_SERVER['PHP_SELF']?> -->
                     <div class="field-block">
                         <label for="weight">Общий вес (кг.): </label>
-                        <input id="weight" class="field" name="weightTotal" value="184180" type="number" placeholder="Общий вес (брутто) с погр. (до 10 кг.)">
+                        <input id="weight" class="field" name="weightTotal" value="" type="number" placeholder="Общий вес (брутто) с погр. (до 10 кг.)">
                     </div>
                     <div class="field-block">
                         <label for="totalUnits">Всего связок/шт.: </label>
-                        <input id="totalUnits" class="field" name="totalUnits" value="87"  type="number" placeholder="Общее кол-во связок/штук.">
+                        <input id="totalUnits" class="field" name="totalUnits" value=""  type="number" placeholder="Общее кол-во связок/штук.">
                     </div>
                     <div class="field-block">
                         <label for="lift">Св./шт. в одном подъеме:</label>
-                        <input id="lift" class="field" name="lift" type="number" value="8"  placeholder="Кол-во связок/штук в одном подъеме">
+                        <input id="lift" class="field" name="lift" type="number" value=""  placeholder="Кол-во связок/штук в одном подъеме">
                     </div>
                     <!--<div class="field-block">
                         <label for="surv1">Вес сюрвейера 1(кг.)</label>
@@ -39,7 +39,7 @@
                     <button id="button" class="button" onclick="calculate()" type="submit">ПОДСЧЕТ</button>
 
                 </form>
-                <p class="expl"><i>Если вес от сюрвейера не указан - </br> введите произвольный вес </br>в графу вес сюрвейера 1, 2. </i></p>
+                <p class="expl"><i>Общий вес должен быть кратный 10. </br> Результат должен быть сопоставим </br>с грузоподъемностью крана</i></p>
             </div>  
 </div>
 <div class="testResult" id="testResult"></div>

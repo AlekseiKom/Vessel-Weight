@@ -1,6 +1,6 @@
 
 body {
-    background: linear-gradient(#1963d3,#41f098);
+    background: linear-gradient(#1d5fc2,#c3ced6);
     min-height: 720px;
     text-align: center;
     /*font-family: 'Teko';*/
@@ -123,6 +123,7 @@ h1 {
 
 .testResult {
     margin-top: -10px;
+    margin-bottom: 10px;
     max-width:360px;
     padding: 10px;
     border-radius:15px ;
