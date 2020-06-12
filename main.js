@@ -181,21 +181,21 @@
       
       mainResultField.innerHTML = 
       'Основное число подъемов (кол-во) = ' + mainLifts + ' по ' + liftSumItems + ' св./шт'  + "<br>" +
-      'Кол-во в основных подъемах = ' + mainLiftsSumItems + "<br>" +
+       //'Кол-во в основных подъемах = ' + mainLiftsSumItems + "<br>" +
       'Кол-во в последнем подъеме = ' + lastLiftItems + "<br>" +
       'Общее кол-во подъемов = ' + totaLiftSum + "<br>" +
-      'Сумма элементов массива = ' + arraySum(weightSumLust) + "<br>" +
-      'Разница с основным весом = ' + correction  + "<br>" +
-      "Массив с учетом корректировки:  " + weightSumLust + "<br>" 
+      'Итоговый вес:  = ' + arraySum(weightSumLust) + ' кг.' + "<br>" +
+       //'Разница с основным весом = ' + correction  + "<br>" +
+      "Окончательное распределение по подъемам:  " + weightSumLust + "<br>" 
 
 
-      /*
+      
       console.log('Основное число подъемов (кол-во) = ' + mainLifts + ' по ' + liftSumItems + ' св./шт')
       console.log('Кол-во в основных подъемах = ' + mainLiftsSumItems);
       console.log('Кол-во в последнем подъеме = ' + lastLiftItems);
       console.log('Общее кол-во подъемов = ' + totaLiftSum);
       console.log('Сумма элементов массива = ' + arraySum(weightSumLust));
       console.log('Разница с основным весом = ' + correction); 
-      console.log("Массив с учетом корректировки:  " + weightSumLust) */
+      console.log("Массив с учетом корректировки:  " + weightSumLust)
     
       } 
