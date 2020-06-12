@@ -177,7 +177,7 @@
        }  */
 
       
-      //тестовый вывод
+      //Вывод данных
       
       mainResultField.innerHTML = 
       'Основное число подъемов (кол-во) = ' + mainLifts + ' по ' + liftSumItems + ' св./шт'  + "<br>" +
@@ -188,7 +188,7 @@
        //'Разница с основным весом = ' + correction  + "<br>" +
       "Окончательное распределение по подъемам:  " + weightSumLust + "<br>" 
 
-
+       //тестовый вывод в консоль
       
       console.log('Основное число подъемов (кол-во) = ' + mainLifts + ' по ' + liftSumItems + ' св./шт')
       console.log('Кол-во в основных подъемах = ' + mainLiftsSumItems);
