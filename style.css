@@ -151,13 +151,13 @@ h1 {
 
     .wrap-Grid {
     /*background-image: url("./SRC/web.png");*/
+    display: flex;
     background-size:100%;
     min-height:720px;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
     margin: 0 auto;
-    display: flex;
     flex-direction: column;
     align-content: center;
     align-items: center;
