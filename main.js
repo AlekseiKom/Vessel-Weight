@@ -26,7 +26,7 @@
                                                                    //Вывод предварительных данных для расчета
      resultField.innerHTML= 
      "Введенный общий вес (брутто) :  "  +  totalWeight + " кг." + "<br>" +
-     "Общее кол-во св/шт. :  "  +  itemsSum + " ." + "<br>" +
+     "Общее кол-во :  "  +  itemsSum + " св/шт." + "<br>" +
      "Средний вес одной св/шт. :  " + (oneItemWeight.toFixed(3)) + " кг." + "<br>" +
      "Средний вес одного подъема из " + liftSumItems + " св/шт." + " =  " + liftSumWeight + " кг."; 
      
@@ -182,7 +182,7 @@
       mainResultField.innerHTML = 
       'Основное число подъемов (кол-во) = ' + mainLifts + ' по ' + liftSumItems + ' св./шт'  + "<br>" +
        //'Кол-во в основных подъемах = ' + mainLiftsSumItems + "<br>" +
-      'Кол-во в последнем подъеме = ' + lastLiftItems + "<br>" +
+      'Кол-во в последнем подъеме = ' + lastLiftItems  + ' св./шт'  + "<br>" +
       'Общее кол-во подъемов = ' + totaLiftSum + "<br>" +
       'Итоговый вес:  = ' + arraySum(weightSumLust) + ' кг.' + "<br>" +
        //'Разница с основным весом = ' + correction  + "<br>" +
