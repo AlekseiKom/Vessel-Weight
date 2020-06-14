@@ -10,7 +10,7 @@
     let resultField = document.getElementById("testResult");     //Окно предварительного расчета 
     let mainResultField = document.getElementById("mainResult");  //Окно основной перевески 
 
-     /* if (totalWeight||itemsSum||liftSumItems = '') {               //Проверка заполнения формы /перезакгрузка страницы
+     /*if (totalWeight||itemsSum||liftSumItems = '' ) {               //Проверка заполнения формы /перезакгрузка страницы
       alert ('Все поля обязательны для заполнения и не должны быть равны или меньше нуля.');
         // location.reload();
      }*/
@@ -63,18 +63,18 @@
 
       console.log(diff);*/
     
-      let weightSum = []; 
+      let weightSum = [];                                           //Создание предварительгного массива
 
-      for (step = 0; step < mainLifts; step++) {
+      for (step = 0; step < mainLifts; step++) {                   
         weightSum.push(liftSumWeight);
       }
-      if (lastLift > 0) {
+      if (lastLift > 0) {                                           //Условие последнего подъема
       weightSum.push(lastLiftWeight);
       }
       console.log("Предварительный массив  " + weightSum);
-                                                                    //Рабочий рандомайзер для массива
+                                                                    //Рандомайзер для массива 
       weightSumLust = [];                                                            
-      let arr = new Array(10, 20, 0, 30, 40, 0, -10, -20, 0, -30, -40); 
+      let arr = new Array(10, 0, 20, 0, 30, 0, 40, 0, -10, -20, 0, -30, -40); 
       for (let index = 0; index < weightSum.length; ++index) {
           let randElement = arr[Math.floor(Math.random()*(arr.length))];
           let value =weightSum[index] + randElement;
