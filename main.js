@@ -63,7 +63,7 @@
 
       console.log(diff);*/
     
-      let weightSum = [];                                           //Создание предварительгного массива
+      let weightSum = [];                                           //Создание предварительгного массива для расчета
 
       for (step = 0; step < mainLifts; step++) {                   
         weightSum.push(liftSumWeight);
