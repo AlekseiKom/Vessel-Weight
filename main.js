@@ -7,8 +7,8 @@
     let liftSumItems = document.getElementById("lift").value;    //Ко-во в одном подъеме
     //let surWeight1 = document.getElementById("survei1").value;   //Вес сюрвейера 1
     //let surWeight2 = document.getElementById("survei2").value;   //Вес сюрвейера 2 
-    let resultField = document.getElementById("testResult");     //Окно предварительного расчета 
-    let mainResultField = document.getElementById("mainResult");  //Окно основной перевески 
+    let resultField = document.getElementById("testResult");     //Предварительный расчет (вывод) 
+    let mainResultField = document.getElementById("mainResult");  //Основная перевеска (вывод)
 
      /*if (totalWeight||itemsSum||liftSumItems = '' ) {               //Проверка заполнения формы /перезакгрузка страницы
       alert ('Все поля обязательны для заполнения и не должны быть равны или меньше нуля.');
