@@ -12,7 +12,7 @@ body {
     /*font-family: 'Teko';*/
     width:370px;
     text-align: center;
-    background: linear-gradient(#1284c7,#3dd9f5);
+    background: linear-gradient(#1284c7,#3dd9f5 100%);
     background-repeat: no-repeat;
     border-radius: 20px;
     color: #ebeff7;

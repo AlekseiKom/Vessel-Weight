@@ -184,7 +184,7 @@
        //'Кол-во в основных подъемах = ' + mainLiftsSumItems + "<br>" +
       'Кол-во в последнем подъеме = ' + lastLiftItems  + ' св./шт'  + "<br>" +
       'Общее кол-во подъемов = ' + totaLiftSum + "<br>" +
-      'Итоговый вес:  = ' + arraySum(weightSumLust) + ' кг.' + "<br>" +
+      'Итоговый вес  = ' + arraySum(weightSumLust) + ' кг.' + "<br>" +
        //'Разница с основным весом = ' + correction  + "<br>" +
       "Окончательное распределение по подъемам:  " + weightSumLust + "<br>" 
 
