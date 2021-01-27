@@ -86,13 +86,13 @@ h1 {
 }
 .button {
     cursor: pointer;
-    width: 90px;
-    height: 34px;
+    width: 100px;
+    height: 35px;
     font-weight: bold;
     background:linear-gradient( #1869e2,#68a2f8);
     color: #e0e0e0;
     margin-top: 5px; 
-    text-shadow: 1px 1px 1px 1px #ccc;
+    text-shadow: 2px 2px 1px 2px #9e9d9d;
     border:none;
     border-radius: 7px;
     transition: 1s;
@@ -105,7 +105,7 @@ h1 {
 .button:hover {
     background-color: #83b4dd;
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
     background: #1c66ee;
     }
 
