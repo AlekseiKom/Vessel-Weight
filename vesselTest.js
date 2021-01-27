@@ -12,7 +12,7 @@ function calculate() {
     let piecesSurvNumber2 = Math.floor(survNumber2/oneItemWeight);
     let liftSum = document.getElementById("lift").value;
   
-    //Вывод введеных данныс с расчетом среднего веса 1 связки/шт.;постчет кол-ва связок по весу сюрвея
+    //Вывод введеных данныс с расчетом среднего веса 1 связки/шт.; Подстчет кол-ва связок по весу сюрвея
     document.write("<br/>" + "<br/>"
      + "Введенный общий вес (брутто): " + resultWeight + " кг."+ "<br/>"
      + "Общее кол-во шт./св.: " + itemsSum + " шт./св."
