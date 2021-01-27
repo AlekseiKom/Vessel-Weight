@@ -89,13 +89,18 @@ h1 {
     width: 90px;
     height: 34px;
     font-weight: bold;
-    background-color: #4129c5;
-    color: #fff;
+    background:linear-gradient( #1869e2,#68a2f8);
+    color: #e0e0e0;
     margin-top: 5px; 
     text-shadow: 1px 1px 1px 1px #ccc;
     border:none;
-    border-radius: 4px 4px;
+    border-radius: 7px;
     transition: 1s;
+    
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+    -23px 0 20px -23px rgba(0, 0, 0, .6),
+    23px 0 20px -23px rgba(0, 0, 0, .6),
+    inset 0 0 40px rgba(0, 0, 0, .1);
    }
 .button:hover {
     background-color: #83b4dd;
