@@ -25,10 +25,10 @@
 
                                                                    //Вывод предварительных данных для расчета
      resultField.innerHTML= 
-     "Введенный общий вес (брутто) :  "  +  totalWeight + " кг." + "<br>" +
-     "Общее кол-во :  "  +  itemsSum + " св/шт." + "<br>" +
-     "Средний вес одной св/шт. :  " + (oneItemWeight.toFixed(3)) + " кг." + "<br>" +
-     "Средний вес одного подъема из " + liftSumItems + " св/шт." + " =  " + liftSumWeight + " кг."; 
+     "Введенный общий вес (брутто) :  "  +  "<b style='color:navy'>" + totalWeight + "</b>" + " кг." + "<br>" +
+     "Общее кол-во :  "  + "<b style='color:navy'>" + itemsSum + "</b>" + " св/шт." + "<br>" +
+     "Средний вес одной св/шт. :  " + "<b style='color:navy'>" + (oneItemWeight.toFixed(3)) + "</b>" + " кг." + "<br>" +
+     "Средний вес одного подъема из " + liftSumItems + " св/шт." + " =  " + "<b style='color:navy'>" +  liftSumWeight + "</b>" + " кг."; 
      
       
      //               Р А С Ч Е Т    О С Н О В Н О Й    П Е Р Е В Е С К И 
@@ -184,7 +184,7 @@
        //'Кол-во в основных подъемах = ' + mainLiftsSumItems + "<br>" +
       'Кол-во в последнем подъеме = ' + lastLiftItems  + ' св./шт'  + "<br>" +
       'Общее кол-во подъемов = ' + totaLiftSum + "<br>" +
-      'Итоговый вес  = ' + arraySum(weightSumLust) + ' кг.' + "<br>" +
+      'Итоговый вес  = ' + "<b style='color:navy'>" + arraySum(weightSumLust) + "</b>" + ' кг.' + "<br>" +
        //'Разница с основным весом = ' + correction  + "<br>" +
       "Окончательное распределение по подъемам:  " + weightSumLust + "<br>" 
 
