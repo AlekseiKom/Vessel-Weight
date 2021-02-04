@@ -145,8 +145,8 @@ h1 {
 }
 .mainResult {
     max-width: 365px;
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 5px;
     border-radius:15px ;
     background: linear-gradient(#acd0e7,#3dd9f5);
     color: #3f2626;
@@ -155,6 +155,15 @@ h1 {
     -23px 0 20px -23px rgba(0, 0, 0, .6),
     23px 0 20px -23px rgba(0, 0, 0, .6),
     inset 0 0 40px rgba(0, 0, 0, .1);
+}
+.mainTab {
+    margin-top: 7px;
+    margin-bottom: -10px;
+    background: #c4e5ff;
+    border: none;
+    border-radius: 10px;
+    padding:5px;
+    box-shadow: 2px 2px 3px #344153 inset;
 }
 
     .wrap-Grid {

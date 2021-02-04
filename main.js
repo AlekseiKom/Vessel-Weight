@@ -122,7 +122,7 @@
         weightSumLust[5] = weightSumLust[5] + 80;
         weightSumLust[6] = weightSumLust[6] + (correction-300);
       }
-      else if (correction >= -80) {                                      
+      else if (correction >= -80){                                      
         weightSumLust[0] = weightSumLust[0] + correction; 
       }  
       else if (-80 >= correction >= -200) {
@@ -186,7 +186,7 @@
       'Общее кол-во подъемов = ' + totaLiftSum + "<br>" +
       'Итоговый вес  = ' + "<b style='color:navy'>" + arraySum(weightSumLust) + "</b>" + ' кг.' + "<br>" +
        //'Разница с основным весом = ' + correction  + "<br>" +
-      "Окончательное распределение по подъемам:  " + weightSumLust + "<br>" 
+      "Окончательное распределение по подъемам: " + "<p class='mainTab' style='color:navy'>" + weightSumLust + "</p>" + "<br>" 
 
        //тестовый вывод в консоль
       
