@@ -108,6 +108,9 @@ h1 {
     transform: scale(1.1);
     background: #1c66ee;
     }
+.button :focus {
+    outline: none;
+}
 
 #mainText {
     margin: 30px;
@@ -158,7 +161,8 @@ h1 {
     /*background-image: url("./SRC/web.png");*/
     display: flex;
     background-size:100%;
-    height: 100vh;
+    background-repeat: none;
+    height: 100%;
     /* min-height:365px; */
     background-position: center;
     background-repeat: no-repeat;
