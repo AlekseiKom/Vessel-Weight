@@ -186,7 +186,7 @@
       'Общее кол-во подъемов = ' + totaLiftSum + "<br>" +
       'Итоговый вес  = ' + "<b style='color:navy'>" + arraySum(weightSumLust) + "</b>" + ' кг.' + "<br>" +
        //'Разница с основным весом = ' + correction  + "<br>" +
-      "Окончательное распределение по подъемам: " + "<p class='mainTab' style='color:navy'>" + weightSumLust + "</p>" + "<br>" 
+      "Окончательное распределение по подъемам: " + "<p class='mainTab' style='color:navy'>" + weightSumLust.join(', ') + "</p>" + "<br>" 
 
        //тестовый вывод в консоль
       
