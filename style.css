@@ -108,8 +108,8 @@ h1 {
     transform: scale(1.1);
     background: #1c66ee;
     }
-.button :focus {
-    outline: none;
+.button:focus {
+   outline: none !important;
 }
 
 #mainText {
