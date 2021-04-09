@@ -15,7 +15,7 @@
 </div>
 <div class="article" id="mainText">
         <div class="container">
-                <form id="calculateForm" action=""  method="post" >  <!--<?= $_SERVER['PHP_SELF']?>--> 
+                <form id="calculateForm"  method="post" >  <!--<?= $_SERVER['PHP_SELF']?>--> 
                     <div class="field-block">
                         <label for="weight">Общий вес (кг.): </label>
                         <input id="weight" class="field" required name="weightTotal" value=""  type="number"  placeholder="Общий вес (брутто) с погр. (до 10 кг.)">
@@ -39,7 +39,7 @@
                     <button id="button" class="button" onclick="calculate()" type="submit">ПОДСЧЕТ</button>
 
                 </form>
-                <p class="expl"><i>Общий вес должен быть кратный 10 кг. </br> Результат должен быть сопоставим </br>с грузоподъемностью крана</i></p>
+                <p class="expl"><i>Общий вес должен быть кратный 10 кг. <br> Результат должен быть сопоставим <br>с грузоподъемностью крана</i></p>
             </div>  
 </div>
 <div class="testResult" id="testResult"></div>
