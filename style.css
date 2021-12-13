@@ -1,7 +1,7 @@
 
 body {
     /* background: linear-gradient(#1d5fc2,#c3ced6); */
-    background:linear-gradient(90deg, #232344,#194e87,#4e8883);      
+    background:linear-gradient(90deg, #232344,#194e87,#99adf0);      
     min-height: 720px;
     text-align: center;
     /*font-family: 'Teko';*/
@@ -133,7 +133,8 @@ h1 {
 .testResult {
     margin-top: -10px;
     margin-bottom: 10px;
-    max-width: 460px;
+    max-width: 365px;
+    /* max-width: 460px; */
     padding: 10px;
     border-radius:15px ;
     background: linear-gradient(#b6d4e6,#7ab3d6);
