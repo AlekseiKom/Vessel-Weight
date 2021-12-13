@@ -182,7 +182,7 @@
       mainResultField.innerHTML = 
       'Основное число подъемов (кол-во) = ' + mainLifts + ' по ' + liftSumItems + ' св./шт'  + "<br>" +
        //'Кол-во в основных подъемах = ' + mainLiftsSumItems + "<br>" +
-      'Кол-во в последнем подъеме = ' + lastLiftItems  + ' св./шт'  + "<br>" +
+      'Кол-во в последнем подъеме = ' + "<b style='color:navy'>" + lastLiftItems + "</b>" + ' св./шт'  + "<br>" +
       'Общее кол-во подъемов = ' + totaLiftSum + "<br>" +
       'Итоговый вес  = ' + "<b style='color:navy'>" + arraySum(weightSumLust) + "</b>" + ' кг.' + "<br>" +
        //'Разница с основным весом = ' + correction  + "<br>" +
