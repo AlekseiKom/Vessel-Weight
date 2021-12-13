@@ -1,19 +1,19 @@
 
 body {
     /* background: linear-gradient(#1d5fc2,#c3ced6); */
-    background:linear-gradient(90deg, #232344,#125283,#4e8883);      
+    background:linear-gradient(90deg, #232344,#194e87,#4e8883);      
     min-height: 720px;
     text-align: center;
     /*font-family: 'Teko';*/
       }
 
 .header {
-    margin-top:10px;
+    margin-top: 10px;
     margin-bottom: -10px;
     /*font-family: 'Teko';*/
     width:370px;
     text-align: center;
-    background: linear-gradient(#1284c7,#3dd9f5 100%);
+    background: linear-gradient(#256387,#3f49d0 100%);
     background-repeat: no-repeat;
     border-radius: 20px;
     color: #ebeff7;
@@ -24,13 +24,13 @@ body {
 }
 
 h1 {
+    font-size: 1.5em;
     padding: 10px;
-    margin: 10px;
 }
 
 .article  {
     width:370px;
-    background: linear-gradient(#3dd9f5,#dbe8f0);
+    background: linear-gradient(#1b5fa7,#a2cae1);
     background-repeat: no-repeat;
     border-radius: 20px;
     text-align: center;
@@ -136,7 +136,7 @@ h1 {
     max-width: 460px;
     padding: 10px;
     border-radius:15px ;
-    background: linear-gradient(#dbe8f0,#acd0e7);
+    background: linear-gradient(#b6d4e6,#7ab3d6);
     color: #201d1d;
     word-wrap: break-word;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
@@ -149,8 +149,8 @@ h1 {
     margin: 5px;
     padding: 5px;
     border-radius:15px ;
-    background: linear-gradient(#acd0e7,#3dd9f5);
-    color: #3f2626;
+    background: linear-gradient(#7ab3d6,#5d77dd);
+    color: #000000;
     word-wrap: break-word;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
     -23px 0 20px -23px rgba(0, 0, 0, .6),
