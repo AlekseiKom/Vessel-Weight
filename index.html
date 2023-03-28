@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Контрольная перевеска</title>
+    <link rel="shortcut icon" type="image/svg" href="/SRC/icon-balance.png"/>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="wrap-Grid">
+<div class="wrapper">
 <div class="header"><h1>Контрольная перевеска <h4>арматура, заготовка, уголок</h4></h1>
     <p class="text"><i>выгрузка/погрузка на вагон/судно</i></p>
 </div>
@@ -36,7 +37,7 @@
                         <label for="surv2">Вес сюрвейера 2(кг.)</label>
                         <input id="survei2" class="field" name="lift" type="number" value=""  placeholder="Вес сюрвейера (кг.)">
                     </div>-->
-                    <button id="button" class="button" onclick="calculate()" type="submit">ПОДСЧЕТ</button>
+                    <button class="btn" onclick="calculate()" type="submit">ПОДСЧЕТ</button>
 
                 </form>
                 <p class="expl"><i>Общий вес должен быть кратным 10 кг. <br> Результат должен быть сопоставим <br>с грузоподъемностью крана и крановых весов</i></p>
