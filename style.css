@@ -1,7 +1,7 @@
 
 body {
-    /* background: linear-gradient(#1d5fc2,#c3ced6); */
-    background:linear-gradient(90deg,#18183c ,#194e87, #18183c);      
+    background-image: url("./SRC/b7.jpg");
+    /* background:linear-gradient(90deg,#18183c ,#194e87, #18183c);       */
     min-height: 720px;
     text-align: center;
     /* font-family: 'Teko'; */
@@ -180,7 +180,6 @@ h4{
 }
 
     .wrapper {
-    background-image: url("./SRC/b9.jpg");
     display: flex;
     background-size:100%;
     background-repeat: none;
