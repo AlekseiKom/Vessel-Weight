@@ -4,7 +4,8 @@ body {
     background:linear-gradient(90deg,#18183c ,#194e87, #18183c);      
     min-height: 720px;
     text-align: center;
-    /*font-family: 'Teko';*/
+    /* font-family: 'Teko'; */
+    font-family: Arial, Helvetica, sans-serif;
       }
 
 .header {
@@ -143,7 +144,7 @@ h4{
     margin-bottom: 10px;
     max-width: 365px;
     /* max-width: 460px; */
-    padding: 10px;
+    padding: 5px;
     border-radius:15px ;
     background: linear-gradient(#b6d4e6,#7ab3d6);
     color: #201d1d;
@@ -174,6 +175,7 @@ h4{
     border-radius: 10px;
     padding:5px;
     box-shadow: 2px 2px 3px #344153 inset;
+    text-shadow: 1px 1px 2px #273564b9 ;
 }
 
     .wrapper {
