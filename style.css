@@ -6,7 +6,8 @@ body {
     text-align: center;
     /* font-family: 'Teko'; */
     font-family: Arial, Helvetica, sans-serif;
-      }
+    height: 100vh;
+}
 
 .header {
     margin-top: 10px;
@@ -179,7 +180,7 @@ h4{
 }
 
     .wrapper {
-    /*background-image: url("./SRC/web.png");*/
+    background-image: url("./SRC/b9.jpg");
     display: flex;
     background-size:100%;
     background-repeat: none;
