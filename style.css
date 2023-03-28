@@ -6,12 +6,12 @@ body {
     text-align: center;
     /* font-family: 'Teko'; */
     font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .header {
     margin-top: 10px;
-    margin-bottom: -10px;
+    /* margin-bottom: -10px; */
     /*font-family: 'Teko';*/
     width:370px;
     text-align: center;
@@ -123,7 +123,7 @@ h4{
 }
 
 #mainText {
-    margin: 30px;
+     margin: 15px;
     }
 
     .text  {
@@ -141,7 +141,7 @@ h4{
 }
 
 .testResult {
-    margin-top: -10px;
+    /* margin-top: -10px; */
     margin-bottom: 10px;
     max-width: 365px;
     /* max-width: 460px; */
