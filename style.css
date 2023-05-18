@@ -1,7 +1,7 @@
 
 body {
-    background-image: url("./SRC/b7.jpg");
-    /* background:linear-gradient(90deg,#18183c ,#194e87, #18183c);       */
+    /* background-image: url("./SRC/b7.jpg"); */
+    background:linear-gradient(90deg,#18183c ,#194e87, #18183c);       */
     min-height: 720px;
     text-align: center;
     /* font-family: 'Teko'; */
