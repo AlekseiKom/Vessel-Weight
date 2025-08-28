@@ -1,33 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Контрольная перевеска</title>
-    <link rel="shortcut icon" type="image/svg" href="/SRC/icon-balance.png"/>
+    <link rel="shortcut icon" type="image/svg" href="/SRC/icon-balance.png" />
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<div class="wrapper">
-<div class="header"><h1>Контрольная перевеска <h4>арматура, заготовка, уголок</h4></h1>
-    <p class="text"><i>выгрузка/погрузка на вагон/судно</i></p>
-</div>
-<div class="article" id="mainText">
-        <div class="container">
-                <form id="calculateForm"  method="post" >  <!--<?= $_SERVER['PHP_SELF']?>--> 
+    <div class="wrapper">
+        <div class="header">
+            <h1>Контрольная перевеска <h4>арматура, заготовка</h4>
+            </h1>
+            <p class="text"><i>выгрузка/погрузка на вагон/судно</i></p>
+        </div>
+        <div class="article" id="mainText">
+            <div class="container">
+                <form id="calculateForm" method="post"> <!--<?= $_SERVER['PHP_SELF']?>-->
                     <div class="field-block">
                         <label for="weight">Общий вес (кг.): </label>
-                        <input id="weight" class="field" required name="weightTotal" value=""  type="number"  placeholder="Общий вес (брутто) с погр. (до 10 кг.)">
+                        <input id="weight" class="field" required name="weightTotal" value="" type="number"
+                            placeholder="Общий вес (брутто) с погр. (до 10 кг.)">
                     </div>
                     <div class="field-block">
                         <label for="totalUnits">Всего связок/шт.: </label>
-                        <input id="totalUnits" class="field" required name="totalUnits" value=""   type="number"   placeholder="Общее кол-во связок/штук.">
+                        <input id="totalUnits" class="field" required name="totalUnits" value="" type="number"
+                            placeholder="Общее кол-во связок/штук.">
                     </div>
                     <div class="field-block">
                         <label for="lift">Св./шт. в одном подъеме:</label>
-                        <input id="lift" class="field" required name="lift" type="number" value=""   placeholder="Кол-во связок/штук в одном подъеме">
+                        <input id="lift" class="field" required name="lift" type="number" value=""
+                            placeholder="Кол-во связок/штук в одном подъеме">
                     </div>
                     <!--<div class="field-block">
                         <label for="surv1">Вес сюрвейера 1(кг.)</label>
@@ -38,16 +45,16 @@
                         <input id="survei2" class="field" name="lift" type="number" value=""  placeholder="Вес сюрвейера (кг.)">
                     </div>-->
                     <button class="btn" onclick="calculate()" type="submit">РАССЧИТАТЬ</button>
-
+                    df
                 </form>
-                <p class="expl"><i>Общий вес должен быть кратным 10 кг. <br> Результат должен быть сопоставим <br>с грузоподъемностью крана и крановых весов.</i></p>
-            </div>  
-</div>
-<div class="testResult" id="testResult"></div>
-<div class="mainResult" id="mainResult"></div>
-</div>
-<script src="./main.js"></script>
+                <p class="expl"><i>Общий вес должен быть кратным 10 кг. <br> Результат должен быть сопоставим <br>с
+                        грузоподъемностью крана и крановых весов.</i></p>
+            </div>
+        </div>
+        <div class="testResult" id="testResult"></div>
+        <div class="mainResult" id="mainResult"></div>
+    </div>
+    <script src="./main.js"></script>
 </body>
+
 </html>
-
-
